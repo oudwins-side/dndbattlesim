@@ -1,8 +1,36 @@
-# Folders
+# What is this?
+
+Welcome, this is a cli (command line interface) tool to simulate DnD combat vs a single monster.
+
+It will assume that everyone does average damage and hits every turn.
+
+It currently only works for simulating combat versus one monster because I find im too lazy to type all monster stats into the commandline.
+
+Arguments currently are (\* denotes requiered):
+
+- \*hp=[val] - monster HP
+- \*toHit=[val] - Monster to hit bonus
+- \*dmg=[val] - monster damage in dice without space, will be parsed to average damage (2d6+10 = 17)
+- \*ac=[val] - monster AC
+- atks=[val] - number of monster attacks
+
+### How can I customize this for my players?
+
+simple just edit the json files inside the PCs folder or add new ones. New files must follow the same format. All JSON files inside that folder will be loaded automatically, if you are missing a player for a session just move his pc into the "not playing" folder, json files in that folder will not be picked up.
+
+# How to install as cli tool?
+
+Remeber to edit the JSON files for the PCs before doing this and after each level up just update them and run the command again. (now that I think about it, you might not have to do this).
+
+In linux clone the repo and type:
+
+- npm i -g --only=prod
+
+# Folders - this is not done..
 
 ## PCs
 
-Json files for each PC with their most important stats
+Json files for each PC with their most important stats.
 
 ## utils
 
@@ -11,15 +39,3 @@ Some utilities and other fns
 ## testing
 
 testing files.
-
-# Implemented
-
-## Parser
-
-- /utils/parser.js will parse any damage string and turn it into the average damage. It accepts any math operation using d to simbolize dice. For example, 1d6+1 will return 4.5
-- /utils/parser_utils/diceToAvgDamage.js will parse [0-9]+?d[0-9]+ into average damage from dice.
-
-# TODO
-
-- MONSTER SHOULD NOT ATTACK A PERSON THAT IS OUT OF THE COMBAT AND A PERSON THAT IS OUT OF THE COMBAT SHOULD NOT ATTACK. THIS IS ALL UNDER COMBATROUND.JS and CREATECHARACTER.JS
-- 1B) TEST IF MONSTER KILLS PC ON DOING FULL ATTACK.
