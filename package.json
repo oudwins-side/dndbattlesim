@@ -1,0 +1,21 @@
+{
+  "name": "battle_simulator",
+  "version": "1.0.0",
+  "description": "dnd 5e battle simulator",
+  "main": "cli.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node cli.js hp=150 dmg=4d8+5 atks=2 ac=20 toHit=1"
+  },
+  "author": "Oudwin",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "bin": {
+    "battle": "./cli.js"
+  }
+}

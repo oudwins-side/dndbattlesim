@@ -1,0 +1,11 @@
+{
+  "name": "Garik",
+  "defense": {
+    "hp": 22,
+    "ac": 10
+  },
+  "attack": {
+    "bonusToHit": 6,
+    "avgDamage": "(1d4+1)*3"
+  }
+}

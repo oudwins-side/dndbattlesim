@@ -1,0 +1,11 @@
+{
+  "name": "dude",
+  "defense": {
+    "hp": 30,
+    "AC": 16
+  },
+  "attack": {
+    "bonus to hit": 5,
+    "avg damage": "1d10+4"
+  }
+}

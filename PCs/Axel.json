@@ -1,0 +1,11 @@
+{
+  "name": "Axel",
+  "defense": {
+    "hp": 36,
+    "ac": 16
+  },
+  "attack": {
+    "bonusToHit": 7,
+    "avgDamage": "1d12+5"
+  }
+}

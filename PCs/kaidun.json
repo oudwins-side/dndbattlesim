@@ -1,0 +1,11 @@
+{
+  "name": "Kaidun",
+  "defense": {
+    "hp": 44,
+    "ac": 17
+  },
+  "attack": {
+    "bonusToHit": 5,
+    "avgDamage": "1d8+3"
+  }
+}
